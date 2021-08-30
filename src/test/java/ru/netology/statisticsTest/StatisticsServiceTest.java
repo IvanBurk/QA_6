@@ -1,8 +1,6 @@
 package ru.netology.statisticsTest;
 
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.params.ParameterizedTest;
-import org.junit.jupiter.params.provider.CsvSource;
 import ru.netology.statistics.StatisticsService;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
