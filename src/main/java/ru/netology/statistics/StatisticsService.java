@@ -44,8 +44,9 @@ public class StatisticsService {
 
     public int belowAverageSales(long[] sales) {
         int month = 0;
+        int averageSales = averageSales(sales);
         for (long sale : sales) {
-            if (sale < averageSales(sales)) {
+            if (sale < averageSales) {
                 month += 1;
             }
         }
@@ -54,8 +55,9 @@ public class StatisticsService {
 
     public int higherAverageSales(long[] sales) {
         int month = 0;
+        int averageSales = averageSales(sales);
         for (long sale : sales) {
-            if (sale > averageSales(sales)) {
+            if (sale > averageSales) {
                 month += 1;
             }
         }
